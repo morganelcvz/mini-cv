@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Open+Sans&family=Poppins:wght@200;300;900&display=swap" rel="stylesheet"> 
+        <script src="//pull.cappuccicons.com/cpf.js"></script>
+        <script src="https://kit.fontawesome.com/dd845416b8.js" crossorigin="anonymous"></script> 
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      
+      <script type="text/javascript">
+$(document).ready(function() {
+// Tooltip only Text
+$('.masterTooltip').hover(function(){
+        // Hover over code
+        var title = $(this).attr('title');
+        $(this).data('tipText', title).removeAttr('title');
+        $('<p class="tooltip"></p>')
+        .text(title)
+        .appendTo('body')
+        .fadeIn('slow');
+}, function() {
+        // Hover out code
+        $(this).attr('title', $(this).data('tipText'));
+        $('.tooltip').remove();
+}).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coordinates
+        var mousey = e.pageY + 10; //**Get Y coordinates**//
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
+});
+});
+        </script>
+
+        <title>PORTFOLIO - INDEX</title>
+    </head>
+
+        <body>
+<div align="center" style="margin-top: 50px;">
+<table cellspacing="0" cellpadding="0" class="contour"><td class="nav" valign="top">
+<div style="padding:45px;">
+    <a href="home.html"class="masterTooltip" title="index"><i class="fa-solid fa-house"></i></a>
+    <br/><br/><br/>
+    <a href="codes.html"class="masterTooltip" title="projets : codes"><i class="fa-solid fa-box-archive" style="margin-top:30px"></i></a>
+    <br/><br/><br/>
+    <a href="video.html"class="masterTooltip" title="projets : vidéo"><i class="fa-solid fa-circle-play" style="margin-top: 30px;"></i></a>
+</div>
+
+</td><td>
+    <div class="box-top"><c>portfolio - accueil</c><i class="fa-solid fa-heart-pulse"></i></div>
+    <div style="width:940px; padding:10px; border:1px solid #ccc; background:#fff">
+<div class="sp-slideshow">
+          
+<input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+<label for="button-1" class="button-label-1"></label>
+<input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+<label for="button-2" class="button-label-2"></label>
+<input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
+<label for="button-3" class="button-label-3"></label>
+<input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
+<label for="button-4" class="button-label-4"></label>
+  
+  
+ <div class="sp-content">
+     <div class="sp-parallax-bg"></div>
+     <ul class="sp-slider clearfix">
+<li><div style="width:1880px; height:500px;background-color: #b4d8e8; background-image: url(https://i.imgur.com/mARgcGS.png); margin-left: -60px;">
+    <div class="BG_01"></div>
+  <div class=P1_txt><h1>PORT<br/>FOLIO</h1>
+<span>morgane le calvez</span>
+  </div>
+</div></li>
+<li><div style="width:940px; height: 500px; margin-left: -60px;">
+    <div class="P2_txt"><span>profil</span></div>
+    <div class="P2_box">Mon intérêt pour le design s'est développé en MANAA. J'ai ensuite poursuivi mes études en <b>cinéma d'animation.</b> Ces études m'ont permis de me familiariser aux logiciels d'animation ainsi que de montage vidéo.<br/>
+        Je pratique le code en autodidacte, j'ai une <c>bonne maîtrise du langage CSS / HTML</c> et <c>des notions de javascript.</c> Je suis intéressée par l'apprentissage de la programmation. J'ai pu en faire l'expérience via des logiciels de jeu vidéo comme Ren'Py ou RPGmaker. <br/>
+    Mon intérêt pour le code et le design de site web va de paire avec mon intérêt plus général pour la productions de projets audiovisuels.</div>
+
+    <div class="P2_link"><i class="fa-solid fa-image"></i> <span class="masterTooltip" title="portfolio animations"><a href="https://morganelcvz-book.tumblr.com/" target="_blank">TUMBLR</a></span></div>
+
+    <div class="P2_link2"><span class="masterTooltip" title="portfolio codes"><a href="https://codepen.io/freakyhoney" target="_blank">codepen</a></span><i class="fa-solid fa-pen-to-square"></i></div>
+</div></li>
+<li><div style="width:940px; height: 500px; background-image: url(https://i.imgur.com/C3M3izZ.png); background-size:100%; background-position:center;margin-top: -2px; margin-left: -60px;">
+    <div class="P3_box"><h1>formations</h1><br/>
+        <c>2019 - 2022</c> <br/>
+Chef de Projet, Concepteur Réalisateur de Cinéma d'Animation<br/> <b>EMCA - Angoulême</b>
+<br/><br/>
+<c>2018-2019</c><br/>
+année préparatoire métier du cinéma d’animation<br/> <b>l’Atelier - Angoulême</b> 
+<br/><br/>
+<c>2017-2018</c><br/>
+Mise A Niveau Arts Appliqués (MANAA)<br/> 
+<b>lycée Pierre simon Laplace - Caen</b>
+<br/><br/>
+<c>2015-2017</c><br/>
+Baccalauréat L <br/>
+<b>Lycée Charles François Lebrun - Coutances</b> 
+</div>
+<div class="P3_note">
+<i class="fa-solid fa-note"></i>
+<span class="masterTooltip" title="CV détaillé"><a href="https://drive.google.com/file/d/1FAg_ZgKoa-jlH8ujd59mSc7N_RLm_GW-/view?usp=sharing" target="_blank">CV</a></span>
+</div>
+<div class="P3_skill"><h1>compétences</h1> 
+<table cellspacing="0"><td class="s3">
+    css/html
+</td><td valign="bottom">
+    <div class="bar_3"></div>
+</td></table><br/>
+<table cellspacing="0"><td class="s3">
+    photoshop
+</td><td valign="bottom">
+    <div class="bar_3"></div>
+</td></table><br/>
+<table cellspacing="0"><td class="s3">
+    after effects
+</td><td valign="bottom">
+    <div class="bar_3" style="width:280px;"></div>
+</td></table><br/>
+<table cellspacing="0"><td class="s3">
+    logiciels d'animation (ToonBoom, TVpaint)
+</td><td valign="bottom">
+    <div class="bar_3" style="width:280px;"></div>
+</td></table><br/>
+</div>
+</div></li>
+<li><div style="width:940px; height:500px; background-image: url(https://i.imgur.com/mARgcGS.png); margin-left: -60px;">
+    <div class="BG_04"></div>
+     <div class="P4_txt"><span>crédits</span></div>
+    <div class="P4_box"><b>code & design</b> par Morgane LE CALVEZ <br/>
+        <b>illustrations</b> par Morgane LE CALVEZ <br/>
+        <b>font icons</b> par <a href="https://fontawesome.com/" target="_blank">FONT AWESOME</a> <br/>
+        <b>photo</b> (fond) par <a href="https://unsplash.com/photos/wZTiKB6rQYY" target="_blank">photoholgic</a> - image libre de droit</div>
+</div></li>
+     </ul>
+ </div></div>
+ </div>
+</td></table>
+</div>
+
+    
+    </body>
+</html>

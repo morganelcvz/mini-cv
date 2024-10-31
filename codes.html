@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Open+Sans&family=Poppins:wght@200;300;900&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/dd845416b8.js" crossorigin="anonymous"></script>
+        <script src="//pull.cappuccicons.com/cpf.js"></script>  
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // Tooltip only Text
+                $('.masterTooltip').hover(function(){
+                    // Hover over code
+                    var title = $(this).attr('title');
+                    $(this).data('tipText', title).removeAttr('title');
+                    $('<p class="tooltip"></p>')
+                    .text(title)
+                    .appendTo('body')
+                    .fadeIn('slow');
+                }, 
+                function() {
+                    // Hover out code
+                    $(this).attr('title', $(this).data('tipText'));
+                    $('.tooltip').remove();
+                }).mousemove(function(e) {
+                    var mousex = e.pageX + 20; //Get X coordinates
+                    var mousey = e.pageY + 10; //**Get Y coordinates**//
+                    $('.tooltip')
+                    .css({ top: mousey, left: mousex })
+                });
+            });
+        </script>
+        <title>PORTFOLIO - CODES</title>
+    </head>
+
+<body>
+<div align="center" style="margin-top: 50px;">
+<table cellspacing="0" cellpadding="0" class="contour"><td class="nav" valign="top">
+<div style="padding:45px;">
+    <a href="home.html"class="masterTooltip" title="index"><i class="fa-solid fa-house"></i></a>
+    <br/><br/><br/>
+    <a href="codes.html"class="masterTooltip" title="projets : codes"><i class="fa-solid fa-box-archive"></i></a>
+    <br/><br/><br/>
+    <a href="video.html"class="masterTooltip" title="projets : vidéo"><i class="fa-solid fa-circle-play" style="margin-top: 30px;"></i></a>
+</div>
+
+</td><td>
+    <div class="box-top"><c>portfolio - codes</c><i class="fa-solid fa-code"></i></div>
+    <div style="width:940px; padding:10px; border:1px solid #ccc; background:#fff">
+    <div style="height:500px; width: auto; background: #f5f5f5;border:1px solid #dedede;">
+        <table cellspacing="5"><td>
+        <div class="forum"><div class="forum_bg"></div></div>
+        <div class="forum_desc"><c>no title</c> // <a href="https://no-title.forumactif.com/" target="_blank">forum >> visiter</a><br/>
+        designé et templates modifiées (css/html/java) par Morgane LE CALVEZ.</div>
+    </td><td>
+        <div class="bann_02"><c>autres codes</c> // <a href="https://codepen.io/freakyhoney" target="_blank">codepen >> voir</a></div>
+        <div class="codep2"><div class="p2_bg"></div></div>
+    </td></table>
+
+ <table cellspacing="0" cellpadding="0" class="forum_swag"><tr><td>
+                        <div class="site" style="background:url(https://i.imgur.com/9PFEB45.png)"><div><h3>
+                          <b>La Maison</b>
+                          <br/>
+                          FORUM RPG <br/><br/>
+                          premier thème codé à partir des maquettes graphiques de Sygea<br/><br/>
+                          <a href="https://imgur.com/a/kh502" target="_blank">preview</a>
+                          </h3></div></div>
+                        </td><td>
+                        <div class="site" style="background:url(https://i.imgur.com/AukfgrV.png); background-size:300px; background-position:center bottom;"><div><h3>
+                          <b>La Maison 2</b><br/> FORUM RPG<br/><br/>
+                          thème réalisé à partir des instructions de Clyde.
+                          <br/><br/>
+                          <a href="https://imgur.com/a/TWd4D" target="_blank">preview</a>
+                          </h3></div></div>
+                        </td></tr>
+                      </table>
+
+                      <div class="bb-box">mes travaux de <b>webdesign</b> sont majoritairement en lien avec le <c>design de forum</c> sur la plateforme <i>forumactif</i>. Certains forums ne sont plus hébergés mais la prévisualisation des codes et du design reste disponible via images.<br/>
+                      Sur internet je code sous le pseudo de <b>Fleur</b>.</div>
+    </div>
+ </div>
+</td></table>
+</div>
+
+    
+</body>
+</html>

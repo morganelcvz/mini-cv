@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Open+Sans&family=Poppins:wght@200;300;900&display=swap" rel="stylesheet"> 
+        <script src="//pull.cappuccicons.com/cpf.js"></script>
+        <script src="https://kit.fontawesome.com/dd845416b8.js" crossorigin="anonymous"></script> 
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      
+      <script type="text/javascript">
+$(document).ready(function() {
+// Tooltip only Text
+$('.masterTooltip').hover(function(){
+        // Hover over code
+        var title = $(this).attr('title');
+        $(this).data('tipText', title).removeAttr('title');
+        $('<p class="tooltip"></p>')
+        .text(title)
+        .appendTo('body')
+        .fadeIn('slow');
+}, function() {
+        // Hover out code
+        $(this).attr('title', $(this).data('tipText'));
+        $('.tooltip').remove();
+}).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coordinates
+        var mousey = e.pageY + 10; //**Get Y coordinates**//
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
+});
+});
+        </script>
+        <title>PORTFOLIO - VIDEOS</title>
+    </head>
+
+        <body>
+<div align="center" style="margin-top: 50px;">
+<table cellspacing="0" cellpadding="0" class="contour"><td class="nav" valign="top">
+<div style="padding:45px;">
+      <a href="home.html"class="masterTooltip" title="index"><i class="fa-solid fa-house"></i></a>
+    <br/><br/><br/>
+    <a href="codes.html"class="masterTooltip" title="projets : codes"><i class="fa-solid fa-box-archive" style="margin-top: 30px;"></i></a>
+    <br/><br/><br/>
+    <a href="video.html"class="masterTooltip" title="projets : vidéo"><i class="fa-solid fa-circle-play" style="margin-top: 30px;"></i></a>
+</div>
+
+</td><td>
+    <div class="box-top"><c>portfolio - audiovisuel</c><i class="fa-solid fa-forward-fast"></i></div>
+    <div style="width:940px; padding:10px; border:1px solid #ccc; background:#fff">
+    <div style="height:500px; width: auto; background: #f5f5f5;border:1px solid #dedede;">
+        <table><td>
+                 <div class="vid_link"><a href="">TUMBLR</a> >> portfolio animations</div>
+      <div class="jv"><div class="jv_bg"><a href="http://atelierdujeuvideo.fr/jeux/2020_emca/cubab/html5/" target="_blank"><span>> PLAY <</span></a></div></div><br/>
+      <div class="jv_dd">jeu vidéo réalisé sur 3 semaines dans le cadre du workshop de <a href="http://atelierdujeuvideo.fr/page15.html" target="_blank">l'atelier du jeu vidéo</a>.<br/>
+      jeu réalisé et produit en collaboration avec Solal Bouché, Julia Mucuta, Iris Tubert, Lorca Alonso, Thérèse Albrecht.</div>
+  </td><td>
+     <div class="vid" style="background:url(https://i.imgur.com/pH0CuZR.png) ; background-size:380px"><div><h3>
+                          <b>music video</b>
+                          <br/><br/>
+                          animation + montage vidéo <br/><br/>
+                          pour un cover du groupe I-KEYA<br/><br/>
+                          <a href="https://www.youtube.com/watch?v=uniWv8ZbP3I" target="_blank">view</a>
+                          </h3></div></div>
+                          <br/>
+                          <div class="vid" style="background:url(https://i.imgur.com/iO5TS9w.png) ; background-size:360px"><div><h3><br/>
+                          <b>film en partenariat</b>
+                          <br/><br/>avec les expériences animées
+                           <br/><br/>réalisation + production (animation)
+                           <br/><br/>
+                          <a href="https://www.youtube.com/watch?v=BqxDYT41wJw" target="_blank">view</a>
+                          </h3></div></div>
+                      </td></table>
+</div>
+</div>
+    
+    </body>
+</html>
